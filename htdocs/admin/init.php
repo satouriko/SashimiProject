@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 	<head>
-<?php if(file_exists("../../admin/.initlock")) header("Location: /index.php"); ?>
+<?php if(file_exists("../../admin/.initlock")) header("Location: /"); ?>
 		<title>请求初始化中……</title>
 	</head>
 	<body>
@@ -24,9 +24,6 @@
 		echo "			管理者密码：　<input type=\"password\" name=\"adminPassword\"/><br/>\n";
 		echo "			<input type=\"submit\" value=\"开始初始化\"/>";
 		echo "		</form>\n";
-		$fileInitLock = fopen($configRootDir."admin/.initlock", "w");
-		fwrite($fileInitLock, "樱花落下的速度是每秒五厘米");
-		fclose($fileInitLock);
 	}
 ?>
 	</body>

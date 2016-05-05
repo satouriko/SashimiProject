@@ -1,17 +1,22 @@
-<!DOCTYPE HTML>
+ï»¿<!DOCTYPE HTML>
 <html>
 	<head>
 <?php require_once("../../admin/config.php"); ?>
-<?php if(file_exists($configRootDir."admin/.initlock")) header("Location: /index.php"); ?>
-		<title>³õÊ¼»¯ÊÀ½ç¹ÜÀíÕßÊı¾İÖĞ¡­¡­</title>
+<?php if(file_exists($configRootDir."admin/.initlock")) header("Location: /"); ?>
+		<title>åˆå§‹åŒ–ä¸–ç•Œç®¡ç†è€…æ•°æ®ä¸­â€¦â€¦</title>
 	</head>
 	<body>
 <?php
-	echo "		ÖØÁ¬½ÓÖÁÊÀ½ç¡­¡­<br/>\n";
+	echo "		é‡è¿æ¥è‡³ä¸–ç•Œâ€¦â€¦<br/>\n";
 	require_once($configRootDir."admin/databaseInfo.php");
-	echo "		¿ªÊ¼ÏòÊÀ½çÌá½»¹ÜÀíÕßÊı¾İ¡­¡­<br/>\n";
-	$sql = "INSERT INTO admin (username, password) VALUES ('".$_POST['adminUsername']."', '".hash("sha256", $_POST['adminPassword'])."');";
+	echo "		å¼€å§‹å‘ä¸–ç•Œæäº¤ç®¡ç†è€…æ•°æ®â€¦â€¦<br/>\n";
+	$sql = "INSERT INTO user (username, password, admin) VALUES ('".$_POST['adminUsername']."', '".hash("sha256", $_POST['adminPassword'])."', '1');";
 	mysqli_query($conn, $sql);
+	echo "		å¼€å§‹åˆ¶ä½œåˆå§‹åŒ–ç»ˆç»“æ ‡è®°â€¦â€¦<br/>\n";
+	$fileInitLock = fopen($configRootDir."admin/.initlock", "w");
+	fwrite($fileInitLock, "æ¨±èŠ±è½ä¸‹çš„é€Ÿåº¦æ˜¯æ¯ç§’äº”å˜ç±³");
+	fclose($fileInitLock);
+	echo "<button onclick=\"window.location.href='/admin/init.php'\">è¿”å›</button>";
 ?>
 	</body>
 </html>
