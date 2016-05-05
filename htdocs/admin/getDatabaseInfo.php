@@ -21,7 +21,7 @@
 	mysqli_query($conn, $sql);
 	mysqli_select_db($conn, $_POST['databaseName']);
 	echo "		开始建立数据表……<br/>\n"; 
-	$sql = "CREATE TABLE user(id int(11) not null primary key auto_increment, username varchar(64) not null, password varchar(256) not null, admin tinyint(1) not null default FALSE);";
+	$sql = "CREATE TABLE user(id int(11) not null primary key auto_increment, username varchar(64) not null, password varchar(256) not null, admin tinyint(1) not null default 0);";
 	mysqli_query($conn, $sql);
 	echo "<button onclick=\"window.location.href='/admin/init.php'\">返回</button>";
 ?>
