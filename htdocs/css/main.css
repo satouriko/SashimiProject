@@ -1,10 +1,15 @@
 ﻿body{
 	margin:0;
 }
+.pageBody{
+	margin-bottom:50px;
+}
 .headerBar{
 	height:50px;
 	width:100%;
 	background-color:#22AA22;
+	bottom:0;
+	position:fixed;
 }
 #headerLogo{
 	height:50px;
@@ -50,14 +55,4 @@
 .headerRight{
 	right:0;
 	position:absolute;
-}
-.footerBar{
-	height:12px;
-	width:100%;
-	background-color:#22AA33;
-	text-align:center;
-	font-size:12px;
-	padding-top:9px;
-	padding-bottom:9px;
-	color:#FFF;
 }

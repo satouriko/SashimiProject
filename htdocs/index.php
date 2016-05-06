@@ -5,15 +5,14 @@
 		<title>生鱼片Project</title>
 	</head>
 	<body>
+		<div class="pageBody">
+			公告：
+			<ul>
+				<li>这是一个刚刚建立的网页</li>
+				<li>欢迎来到生鱼片Project</li>
+			</ul>
+		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
-<div class="mainpageBody">
-	公告：
-	<ul>
-		<li>这是一个刚刚建立的网页</li>
-		<li>欢迎来到生鱼片Project</li>
-	</ul>
-</div>
-<?php require_once($configRootDir."includes/views/footer.php"); ?>
 	<script>
 		document.getElementById("headerLogo").src='/img/mainpageLogo.png';
 	</script>

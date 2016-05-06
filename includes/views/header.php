@@ -8,13 +8,6 @@
 		</ul>
 	</span>
 	<span class="headerRight">
-<?php
-	if(!isset($_SESSION['logined'])){
-		echo "<a href=\"/auth/login.php\" class=\"headerA\">登录</a>";
-		echo "<a href=\"/\" class=\"headerA\">注册</a>";
-	}else{
-		echo "<a href=\"/auth/logout.php\" class=\"headerA\">登出</a>";
-	}
-?>
+		<a href="/auth/logout.php" class="headerA">登出</a>
 	</span>
 </div>
