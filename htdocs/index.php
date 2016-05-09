@@ -8,8 +8,7 @@
 		<div class="pageBody">
 			公告：
 			<ul>
-				<li>这是一个刚刚建立的网页</li>
-				<li>欢迎来到生鱼片Project</li>
+<?php echo "<li>".$_SESSION['nickname']."</li>"; ?>
 			</ul>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>

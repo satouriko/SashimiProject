@@ -2,7 +2,7 @@
 <html>
 	<head>
 <?php require_once("../../includes/functions/head.php"); ?>
-		<title>µÇ³ö</title>
+		<title>ç™»å‡º</title>
 	</head>
 	<body>
 <?php logout(); ?>

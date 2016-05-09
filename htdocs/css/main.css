@@ -23,6 +23,7 @@
 	display:inline;
 	height:50px;
 	left:50px;
+	bottom:0;
 	position:absolute;
 }
 .headerLI{
@@ -54,5 +55,30 @@
 }
 .headerRight{
 	right:0;
+	bottom:29px;
 	position:absolute;
+}
+.redText{
+	color:red;
+}
+.orangeText{
+	color:orange;
+}
+.yellowText{
+	color:yellow;
+}
+.greenText{
+	color:green;
+}
+.blueText{
+	color:blue;
+}
+.purpleText{
+	color:purple;
+}
+.whiteText{
+	color:white;
+}
+.borderText{
+	text-shadow: 0 0 1px #000;
 }
