@@ -1,5 +1,5 @@
 .authBody{
-    margin-top:250px;
+    margin-top:50px;
 }
 .authBody > form > input[type=text],.authBody > form > input[type=password]{
     height:40px;
@@ -22,4 +22,13 @@
 }
 .authTitle{
     font-family:黑体;
+}
+.authError{
+	border-radius:3px;
+	background-color:#FF3333;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px;
+	max-width:340px;
 }

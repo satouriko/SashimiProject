@@ -15,6 +15,12 @@
 	height:50px;
 	width:50px;
 }
+#headerLogo:hover{
+	background-color:#CCCCFF;
+}
+#headerLogo:active{
+	background-color:#8888FF;
+}
 .headerUL{
 	list-style-type:none;
 	margin:0;
@@ -47,10 +53,13 @@
 	position:relative;
 	background-color:#228822;
 }
+.headerActiveLogo{
+	background-color:#88CCFF;
+}
 .headerA:hover,.headerActiveA:hover{
 	background-color:#22CC22;
 }
-.headerA:active,.headerActiveA:hover{
+.headerA:active,.headerActiveA:active{
 	background-color:#227722;
 }
 .headerRight{

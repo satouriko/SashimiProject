@@ -2,18 +2,25 @@
 <html>
 	<head>
 <?php require_once("../../includes/functions/head.php"); ?>
-		<title>新用户注册>.<</title>
+<?php if(isset($_SESSION['logined'])) header("Location: /"); ?>
+		<link rel="stylesheet" type="text/css" href="/css/auth.css" />
+		<script src="/js/auth.js"></script>
+		<title>新生鱼片报道>.<</title>
 	</head>
 	<body>
-		<div class="pageBody">
-	<form action="actionReg.php" method="post">
-	用户名:<input type="text" name="username"> 由字母和数字组成 6~20位。></input></br>
-	       密码:<input type="text" name="password"> 由字母和数字组成，6~20位。</input></br>
-	重复您的密码:<input type="text" name="repassword"> 再次输入您的密码以确认。</input></br>
-	昵称:<input type="text" name="nickname"> 由任意字符组成。</input></br>
-	<input type="submit" name="确定" value="确定">
-	</form>
-	</div>
+		<div class="pageBody authBody" align="center">
+			<img src="/img/authLogo.png" id="authLogo"/>
+			<h2 class="authTitle borderText"><span class="redText">生</span><span class="orangeText">鱼</span><span class="yellowText">片</span><span class="greenText">通</span><span class="blueText">行</span><span class="purpleText">证</span><span class="whiteText">／报道</span></h2>
+			<form action="actionReg.php" method="post" onsubmit="return registerCheck(this.username.value,this.password.value,this.repassword.value,this.nickname.value)">
+				<input type="text" name="username" value="生鱼片ID(3~64)" onfocus="javascript:if(this.value=='生鱼片ID(3~64)')this.value='';" onblur="javascript:if(this.value=='')this.value='生鱼片ID(3~64)';"></input></br>
+				<input type="text" name="password" value="生鱼片通行暗号(6~64)" onfocus="javascript:if(this.value=='生鱼片通行暗号(6~64)'){this.value='';this.type='password';}" onblur="javascript:if(this.value==''){this.value='生鱼片通行暗号(6~64)';this.type='text'}"></input></br>
+				<input type="text" name="repassword" value="暗号／二次确认" onfocus="javascript:if(this.value=='暗号／二次确认'){this.value='';this.type='password';}" onblur="javascript:if(this.value==''){this.value='暗号／二次确认';this.type='text'}"></input></br>
+				<input type="text" name="nickname" value="本体称呼(0~256)" onfocus="javascript:if(this.value=='本体称呼(0~256)')this.value='';" onblur="javascript:if(this.value=='')this.value='本体称呼(0~256)';"></input></br>
+				<input type="submit" name="报道" value="报道">
+			</form>
+			<div id="authErrorInfo"></div>
+			<script>errorReport($_GET['exitcode'])</script>
+		</div>
 		<?php require_once($configRootDir."includes/views/header.php"); ?>
 	</body>
 </html>	

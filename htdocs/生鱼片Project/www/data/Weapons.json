@@ -1,0 +1,5 @@
+[
+null,
+{"id":1,"animationId":1,"description":"并不知道是从哪来的，但是可以确定的是它不属于我。","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":242,"name":"非所属之物","note":"","params":[0,0,3,0,0,2,0,0],"price":0,"wtypeId":2},
+{"id":2,"animationId":6,"description":"！","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":23,"dataId":5,"value":2}],"iconIndex":97,"name":"切开话语之剪","note":"","params":[-233,-233,233,-233,-233,-233,-233,-233],"price":10000,"wtypeId":1}
+]

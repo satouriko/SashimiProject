@@ -13,7 +13,7 @@
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	<script>
-		document.getElementById("headerLogo").src='/img/mainpageLogo.png';
+		document.getElementById("headerLogo").className='headerActiveLogo';
 	</script>
 	</body>
 </html>

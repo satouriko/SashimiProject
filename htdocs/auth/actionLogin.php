@@ -6,11 +6,11 @@
 <?php require_once("../../includes/functions/head.php"); ?>
 <?php
     $row;
-    if(loginCheck($_POST['username'],$_POST['password'],$row,$conn))
-    {
+	$exitcode = loginCheck($_POST['username'],$_POST['password'],$row,$conn);
+    if($exitcode==0){
         loginAction($row);
         header("Location: /");
-    }else echo "<script> alert('密码错误！'); history.go(-1);</script>";
+    }else header("Location: /auth/login.php?exitcode=".$exitcode);
 ?>
 </body>
 </html>
