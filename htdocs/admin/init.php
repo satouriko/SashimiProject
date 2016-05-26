@@ -8,7 +8,7 @@
 <?php if(!file_exists("../../admin/config.php")) header("Location: /admin/actionGetRootDir.php"); ?>
 <?php require_once("../../admin/config.php"); ?>
 <?php
-	if(!file_exists($configRootDir."admin/databaseinfo.php")){
+	if(!file_exists($configRootDir."admin/databaseInfo.php")){
 		echo "		<form action=\"getDatabaseInfo.php\" method=\"POST\">\n";
 		echo "			<h3>请求初始化世界数据……</h3>\n";
 		echo "			数据库地址：　<input name=\"databaseAddress\" value=\"localhost\"/><br/>\n";
