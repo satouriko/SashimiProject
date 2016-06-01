@@ -28,7 +28,7 @@
 		$sql = "CREATE TABLE cardinfo(id int(11) not null primary key auto_increment, cardno varchar(32) not null, type int(11) not null, name varchar(64) not null, title varchar(64) not null, level int(11) not null, cost int(11) not null, rarity varchar(16) not null, number1 int(11) not null, number2 int(11) not null, illustrator varchar(64) not null, tag1 varchar(64) not null, tag2 varchar(64) not null, text varchar(1024) not null, color varchar(16) not null, source varchar(64) not null);";
 		mysqli_query($conn, $sql);
 		echo "		卡牌信息表建立完成……<br/>\n"; 
-		$sql = "CREATE TABLE cardpossession(id int(11) not null primary key auto_increment, cardid int(11) not null, userid int(11) not null);";
+		$sql = "CREATE TABLE cardpossession(id int(11) not null primary key auto_increment, cardid int(11) not null, userid int(11) not null, cardlv int(11) not null);";
 		mysqli_query($conn, $sql);
 		echo "		卡牌拥有表建立完成……<br/>\n";
 		echo "<button onclick=\"window.location.href='/admin/init.php'\">返回</button>";
