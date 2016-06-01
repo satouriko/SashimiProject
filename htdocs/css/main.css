@@ -16,10 +16,10 @@
 	width:50px;
 }
 #headerLogo:hover{
-	background-color:#CCCCFF;
+	background-color:#22DD22;
 }
 #headerLogo:active{
-	background-color:#8888FF;
+	background-color:#22BB22;
 }
 .headerUL{
 	list-style-type:none;
@@ -54,7 +54,7 @@
 	background-color:#228822;
 }
 .headerActiveLogo{
-	background-color:#88CCFF;
+	background-color:#22CC22;
 }
 .headerA:hover,.headerActiveA:hover{
 	background-color:#22CC22;
