@@ -9,7 +9,7 @@
 		</ul>
 	</span>
 	<span class="headerRight">
-<?php if(isset($_SESSION['logined'])) echo"		<a href=\"/\" class=\"headerA\" id=\"userBoard\">".$_SESSION['nickname']."</a>"; ?>
+<?php if(isset($_SESSION['logined'])) echo"		<a href=\"/user/userInfo.php\" class=\"headerA\" id=\"userInfo\">".$_SESSION['nickname']."</a>"; ?>
 <?php if(isset($_SESSION['logined'])) echo"		<a href=\"/auth/logout.php\" class=\"headerA\">登出</a>"; else if(strstr($_SERVER["REQUEST_URI"],"/auth/register.php")==NULL) echo"		<a href=\"/auth/register.php\" class=\"headerA\" id=\"register\">注册</a>"; ?>
 	</span>
 </div>
