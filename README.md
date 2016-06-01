@@ -1,6 +1,6 @@
 # SashimiProject
 
-<h1>计划书／一期</h1>
+<h3>计划书／一期</h3>
 <ul>
 	<li>卡牌管理和扭蛋系统</li>
 	<li>RPG的在线存档系统</li>

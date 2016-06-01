@@ -10,9 +10,8 @@
 		else return 0;
 	}
 	function loginAction($row){
-		$_SESSION["username"] = $_POST['username'];
-		$_SESSION["nickname"] = $row['nickname'];
-		$_SESSION["logined"] = true;
+		$_SESSION['userid'] = $row['id'];
+		$_SESSION['logined'] = true;
 	}
 	function registerCheck($username,$password,&$row,$conn){
 		$hashpassword=hash("sha256", $password);
