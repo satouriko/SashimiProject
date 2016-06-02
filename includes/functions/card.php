@@ -5,9 +5,6 @@
 		$card = json_decode($jsonString);
 	}
 	function displayCard($id, $card){
-		echo $card[$id]->{'cardno'}."<br/>";
-		if($card[$id]->{'type'}==1) echo "角色<br/>"; else if($card[$id]->{'type'}==2) echo "事件<br/>"; else echo "闪耀时刻<br/>";
-		echo $card[$id]->{'title'}." ".$card[$id]->{'name'}."<br/>";
 		echo $card[$id]->{'level'}."/".$card[$id]->{'cost'}."<br/>";
 		echo $card[$id]->{'rarity'}."<br/>";
 		echo $card[$id]->{'number1'}."<br/>";
@@ -18,6 +15,11 @@
 		echo $card[$id]->{'text'}."<br/>";
 		echo $card[$id]->{'source'}."<br/>";
 		echo "<br/>";
+		echo "<div style=\"background-image:url(/cards/background/".$id.".jpg);\" class=\"card\">";
+		echo "<img src=\"/cards/templates/".$card[$id]->{'color'}.".png\"/>";
+		echo "<span class=\"cardCardNo\">".$card[$id]->{'cardno'}."</span>";
+		echo "<span class=\"cardName\">".$card[$id]->{'name'}."</span>";
+		echo "</div>";
 	}
 	function effect1(){
 		return;
