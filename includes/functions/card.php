@@ -5,21 +5,20 @@
 		$card = json_decode($jsonString);
 	}
 	function displayCard($id, $card){
-		echo $card[$id]->{'level'}."/".$card[$id]->{'cost'}."<br/>";
-		echo $card[$id]->{'rarity'}."<br/>";
-		echo $card[$id]->{'number1'}."<br/>";
-		for($i=0;$i<$card[$id]->{'number2'};$i++) echo "※";
-		echo "<br/>";
-		echo $card[$id]->{'illustrator'}."<br/>";
-		if($card[$id]->{'tag2'}==NULL) echo $card[$id]->{'tag1'}."<br/>"; else echo $card[$id]->{'tag1'}." ".$card[$id]->{'tag2'}."<br/>";
-		echo $card[$id]->{'text'}."<br/>";
-		echo $card[$id]->{'source'}."<br/>";
-		echo "<br/>";
-		echo "<div style=\"background-image:url(/cards/background/".$id.".jpg);\" class=\"card\">";
-		echo "<img src=\"/cards/templates/".$card[$id]->{'color'}.".png\"/>";
-		echo "<span class=\"cardCardNo\">".$card[$id]->{'cardno'}."</span>";
-		echo "<span class=\"cardName\">".$card[$id]->{'name'}."</span>";
-		echo "</div>";
+		if($card[$id]->{'type'}==1){
+			echo "<div style=\"background-image:url(/cards/background/".$id.".jpg);\" class=\"card\">";
+			echo "<img src=\"/cards/templates/".$card[$id]->{'color'}.".png\"/>";
+			echo "<span class=\"cardCardNo\">".$card[$id]->{'cardno'}." ".$card[$id]->{'rarity'}."</span>";
+			echo "<span class=\"cardName\">".$card[$id]->{'name'}."</span>";
+			echo "<span class=\"cardLevel\">".$card[$id]->{'level'}."</span>";
+			echo "<span class=\"cardCost\">".$card[$id]->{'cost'}."</span>";
+			echo "<span class=\"cardNumber1\">".$card[$id]->{'number1'}."</span>";
+			//number2
+			//tag要加背景
+			//text
+			//description
+			echo "</div>";
+		}
 	}
 	function effect1(){
 		return;

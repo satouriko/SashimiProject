@@ -2,14 +2,14 @@
 <html>
 	<head>
 <?php require_once("../includes/functions/head.php"); ?>
+<link rel="stylesheet" type="text/css" href="/css/index.css" />
 		<title>生鱼片Project</title>
 	</head>
 	<body>
 		<div class="pageBody">
-			公告：
-			<ul>
-<?php echo "<li>".$_SESSION['nickname']."</li>"; ?>
-			</ul>
+			<div class="picViewer">
+				公告图片（预留）
+			</div>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	<script>
