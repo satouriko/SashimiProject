@@ -1,3 +1,3 @@
 <?php
-system("git pull");
-echo "<br/>";
+while(system("git pull") != "Already up-to-date.")
+  echo "<br/>";
