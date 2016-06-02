@@ -1,4 +1,4 @@
-﻿function usernameIllegalCheck(username){
+function usernameIllegalCheck(username){
 	var legalChar="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!#$%^&*()-=_+[]\\{}|;\':\"<>,./<>? ";
 	for(var i=0;i<username.length;i++){
 		var flag=false;
@@ -26,47 +26,47 @@ function passwordIllegalCheck(password){
 }
 function loginCheck(username,password){
     if(username==""||username=="生鱼片ID"){
-        window.location.href='/auth/login.php?exitcode=202';
+		window.history.pushState(null, null, "?exitcode=202");
         return false;
     }else if(password==""||password=="生鱼片通行暗号"||password=="诶嘿嘿☆~") {
-        window.location.href = '/auth/login.php?exitcode=200';
+		window.history.pushState(null, null, "?exitcode=200");
         return false;
     }else if(username.length>64||username.length<3){
-        window.location.href = '/auth/login.php?exitcode=201';
+		window.history.pushState(null, null, "?exitcode=201");
         return false;
     }else if(password.length>64||password.length<6){
-        window.location.href = '/auth/login.php?exitcode=215';
+		window.history.pushState(null, null, "?exitcode=215");
         return false;
     }else if(usernameIllegalCheck(username)||passwordIllegalCheck(password)){
-		window.location.href='/auth/login.php?exitcode=500';
+		window.history.pushState(null, null, "?exitcode=500");
 		return false;
 	}else return true;
 }
 function registerCheck(username,password,repassword,value){
     if(username==""||username=="生鱼片ID(3~64)"){
-        window.location.href='/auth/register.php?exitcode=8202';
+		window.history.pushState(null, null, "?exitcode=8202");
         return false;
     }else if(password==""||password=="生鱼片通行暗号(6~64)"){
-        window.location.href='/auth/register.php?exitcode=8200';
+		window.history.pushState(null, null, "?exitcode=8200");
         return false;
     }else if(password!=repassword){
-        window.location.href='/auth/register.php?exitcode=8203';
+		window.history.pushState(null, null, "?exitcode=8203");
         return false;
 	}else if(username.length>64||username.length<3){
-        window.location.href = '/auth/register.php?exitcode=8201';
+		window.history.pushState(null, null, "?exitcode=8201");
         return false;
     }else if(password.length>64||password.length<6){
-        window.location.href = '/auth/register.php?exitcode=8215';
+		window.history.pushState(null, null, "?exitcode=8215");
         return false;
     }else if(usernameIllegalCheck(username)||passwordIllegalCheck(password)){
-		window.location.href='/auth/register.php?exitcode=8500';
+		window.history.pushState(null, null, "?exitcode=8500");
 		return false;
 	}
 }
 function errorReport(exitcode){
 	if(typeof exitcode === "undefined") return 0;
-	document.getElementById('authErrorInfo').className="authError";
-	document.getElementById('authErrorInfo').innerHTML="Exitcode "+exitcode+"：";
+	$('#authErrorInfo').addClass("authError");
+	$('#authErrorInfo').text("Exitcode "+exitcode+"：");
     if(exitcode==202) document.getElementById('authErrorInfo').innerHTML+="ID不能为空！";
     else if(exitcode==200) document.getElementById('authErrorInfo').innerHTML+="暗号不能为空！";
     else if(exitcode==201) document.getElementById('authErrorInfo').innerHTML+="ID不符合注册长度！";
@@ -81,5 +81,5 @@ function errorReport(exitcode){
     else if(exitcode==8215) document.getElementById('authErrorInfo').innerHTML+="暗号不符合注册长度！";
 	else if(exitcode==8500) document.getElementById('authErrorInfo').innerHTML+="ID或暗号非法！";
 	else if(exitcode==8804) document.getElementById('authErrorInfo').innerHTML+="ID已经被占用辣！(╯‵□′)╯︵┻━┻";
-	else document.getElementById('authErrorInfo').innerHTML+="完全不知道发生了什么！";
+	else document.getElementById('authErrorInfo').innerHTML+="完全不知道发生了什么！（自豪地）";
 }

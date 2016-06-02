@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 	<head>
 <?php require_once("../../includes/functions/head.php"); ?>
@@ -17,7 +17,7 @@
 				<input type="submit" value="进入"/>
 			</form>
 			<div id="authErrorInfo"></div>
-			<script>errorReport($_GET['exitcode'])</script>
+			<script>window.setInterval(function(){errorReport($_GET['exitcode']);},100);</script>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	</body>

@@ -8,16 +8,18 @@
 	<body>
 		<div class="pageBody">
 <?php
+	$card;
+	getCardInfo($configRootDir, $card);
 	$sql = "select * from cardpossession where (userid = '".$_SESSION['userid']."');";
 	$result = mysqli_query($conn,$sql);
 	while($row=mysqli_fetch_array($result)){
-		displayCard($row['cardid'],$conn);
+		displayCard($row['cardid'],$card);
 	}
 ?>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	<script>
-		document.getElementById("getFish").className='headerActiveA';
+		changeHeaderClass("getFish");
 	</script>
 	</body>
 </html>

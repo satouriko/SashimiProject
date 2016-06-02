@@ -1,13 +1,12 @@
-﻿# PLANS - SashimiProject
+# PLANS - SashimiProject
 
 <h3>黑猫->完成整体框架的搭建，完成游戏初期的设计，完成RPG插件的开发</h3>
 <ul>
 	<li>设计开发相关的文件目录结构<b><i>(complete)</i></b></li>
 	<li>制作出基本的用户功能、初始化功能，对后端信息进行简单整合</li>
 	<li>制作出RPG部分的第一张地图<b><i>(complete)</i></b></li>
-	<li>使用开源软件搭建Wiki部分<b><i>(complete)</i></b></li>
 	<li>开发RPG的存档插件和数据库交流插件（这部分应与PHP交互完成）</li>
-	<li>制作一份有关于卡牌的说明文档</li>
+	<li>制作一份有关于卡牌的说明文档<b><i>(complete)</i></b></li>
 </ul>
 
 <h3>小天使->完成扭蛋系统的开发</h3>

@@ -1,4 +1,4 @@
-﻿# CARDINFO - SashimiProject
+# CARDINFO - SashimiProject
 
 <h3>卡牌模板（参照数据表结构）</h3>
 <ul>

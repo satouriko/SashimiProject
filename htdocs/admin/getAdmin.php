@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 	<head>
 <?php require_once("../../admin/config.php"); ?>

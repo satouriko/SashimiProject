@@ -1,6 +1,7 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <script src="/js/main.js"></script>
+<script src="/js/jquery.js"></script>
 <?php
 	session_start();
 	if(!isset($_SESSION['openErrRpt'])) error_reporting(0);
