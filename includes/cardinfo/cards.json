@@ -1,5 +1,5 @@
 [
 	{},
-	{"cardno":"S01/SSM-001","type":"1","name":"Teddy太","level":"3","cost":"2","rarity":"MR","number1":"10000","number2":"2","illustrator":"Shidu","tag1":"中二厨","tag2":"东京泰迪熊","text":"这是一个测试用的卡牌","description":"","color":"yellow","source":"Neru"},
-	{"cardno":"S01/SSM-002","type":"1","name":"Teddy太·真","level":"3","cost":"2","rarity":"SP","number1":"10000","number2":"2","illustrator":"Shidu","tag1":"中二厨","tag2":"东京泰迪熊","text":"这是一个测试用的卡牌","description":"","color":"yellow","source":"Neru"}
+	{"cardno":"S01/SSM-001","type":"1","name":"镜音铃 -水光-","level":"2","cost":"1","rarity":"R","number1":"2000","number2":"1","illustrator":"","tag1":"铃酱","tag2":"水","text":"【支援】你的其他卡牌的行动力+500。","description":"溶解于，那炉心之中。","color":"yellow","source":""},
+	{"cardno":"S01/SSM-002","type":"1","name":"双子 -静眠-","level":"3","cost":"2","rarity":"XR","number1":"500","number2":"7","illustrator":"","tag1":"镜音双子","tag2":"","text":"【触发】你的行动回合开始时，若本卡牌收集值大于1，本卡牌行动力+500，收集值-1。","description":"看微弱星光，穿过梦想。","color":"yellow","source":""}
 ]
