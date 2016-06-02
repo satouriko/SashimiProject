@@ -10,12 +10,11 @@
 <?php
 	$card;
 	getCardInfo($configRootDir, $card);
-	$sql = "select * from cardpossession where (userid = '".$_SESSION['userid']."');";
+	$sql = "select * from cardpossession where (id = '".$_GET['id']."');";
 	$result = mysqli_query($conn,$sql);
-	while($row=mysqli_fetch_array($result)){
-		displayCard($row['cardid'],$card);
-		echo "　";
-	}
+	$row=mysqli_fetch_array($result);
+	displayCard($row['cardid'],$card);
+	echo "　<br/>卡牌等级:".$row['cardlv'];
 ?>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>

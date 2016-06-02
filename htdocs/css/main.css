@@ -126,6 +126,7 @@ body{
 	width:100px;
 	text-align:center;
 	transform:scale(0.63);
+	color:#000;
 }
 .cardName{
 	position:absolute;
@@ -152,6 +153,7 @@ body{
 	left:8%;
 	font-family: plantagenetCherokee;
 	font-size:18px;
+	color:#000;
 }
 .cardNumber1{
 	position:absolute;

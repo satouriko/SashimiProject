@@ -2,8 +2,8 @@
 	<span class="headerLeft">
 		<a href="/"><img src="/img/logo.png" id="headerLogo"/></a>
 		<ul class="headerUL">
-<?php if(isset($_SESSION['logined'])) echo"			<li class=\"headerLI\"><a href=\"/card/warehouse.php\" class=\"headerA\" id=\"getFish\">仓库</a></li>"; ?>
-<?php if(isset($_SESSION['logined'])) echo"			<li class=\"headerLI\"><a href=\"/\" class=\"headerA\" id=\"fireFish\">扭蛋</a></li>"; ?>
+<?php if(isset($_SESSION['logined'])) echo"			<li class=\"headerLI\"><a href=\"/card\" class=\"headerA\" id=\"getFish\">仓库</a></li>"; ?>
+<?php if(isset($_SESSION['logined'])) echo"			<li class=\"headerLI\"><a href=\"/gacha\" class=\"headerA\" id=\"fireFish\">扭蛋</a></li>"; ?>
 <?php if(isset($_SESSION['logined'])) echo"			<li class=\"headerLI\"><a href=\"/wiki\" class=\"headerA\">Wiki</a></li>"; ?>
 		</ul>
 	</span>
