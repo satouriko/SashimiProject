@@ -1,6 +1,18 @@
 @font-face{
-	font-family: 宋体;
-	src: url('/fonts/simsun.ttc');
+	font-family: castellar;
+	src: url('/fonts/Castellar.ttf');
+}
+@font-face{
+	font-family: centuryGothic;
+	src: url('/fonts/Century Gothic.ttf');
+}
+@font-face{
+	font-family: plantagenetCherokee;
+	src: url('/fonts/Plantagenet Cherokee.ttf');
+}
+@font-face{
+	font-family: 中宋;
+	src: url('/fonts/HWZS.ttf');
 }
 body{
 	margin:0;
@@ -14,7 +26,7 @@ body{
 	background-color:#22AA22;
 	bottom:0;
 	position:fixed;
-	font-family: 宋体;
+	font-family: 中宋;
 }
 #headerLogo{
 	height:50px;
@@ -97,20 +109,56 @@ body{
 	height:489px;
 	width:349px;
 	border-radius:10px;
+	position:relative;
 }
 .cardSmall{
-	transform:scale(0.5,0.5);
+	transform:scale(0.5);
 }
 .cardCardNo{
-	position:relative;
-	top:-63px;
-	left:40px;
-	font-size:10px;
+	position:absolute;
+	top:88%;
+	left:4.5%;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	width:100px;
+	text-align:center;
+	transform:scale(0.63);
 }
 .cardName{
-	position:relative;
-	top:-55px;
-	left:55px;
-	box-align:center;
-	width:100px;
+	position:absolute;
+	top:89%;
+	left:35%;
+	font-family: 中宋;
+	text-align:center;
+	width:155px;
+	color:#FFF;
+	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+}
+.cardLevel{
+	position:absolute;
+	top:5.3%;
+	left:7.8%;
+	font-family: plantagenetCherokee;
+	font-size:22px;
+	color:#FFF;
+	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+}
+.cardCost{
+	position:absolute;
+	top:12%;
+	left:8%;
+	font-family: plantagenetCherokee;
+	font-size:18px;
+}
+.cardNumber1{
+	position:absolute;
+	top:90.5%;
+	left:7.8%;
+	font-family: plantagenetCherokee;
+	font-size:22px;
+	text-align:center;
+	width:65px;
+	color:#FFF;
+	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
 }
