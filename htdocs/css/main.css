@@ -14,6 +14,14 @@
 	font-family: 中宋;
 	src: url('/fonts/HWZS.ttf');
 }
+@font-face{
+	font-family: 粗宋;
+	src: url('/fonts/FZCSJW.ttf');
+}
+@font-face{
+	font-family: 准圆;
+	src: url('/fonts/FZY3JW.ttf');
+}
 body{
 	margin:0;
 }
@@ -108,10 +116,13 @@ body{
 .card{
 	height:489px;
 	width:349px;
-	border-radius:10px;
+	border-radius:15px;
 	position:relative;
 	float:left;
 	margin:10px;
+}
+.cardTemplate{
+	border-radius:15px;
 }
 .cardSmall{
 	transform:scale(0.5);
@@ -130,9 +141,10 @@ body{
 }
 .cardName{
 	position:absolute;
-	top:89%;
+	top:89.3%;
 	left:35%;
-	font-family: 中宋;
+	font-family: 粗宋;
+	font-weight:bold;
 	text-align:center;
 	width:155px;
 	color:#FFF;
@@ -165,4 +177,63 @@ body{
 	width:65px;
 	color:#FFF;
 	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+}
+.cardNumber2{
+	position:absolute;
+	top:93.5%;
+	left:29%;
+}
+.cardTag1{
+	height:15px;
+	width:81px;
+	text-align:center;
+	position:absolute;
+	top:93.7%;
+	left:69%;
+	background-image:url('/cards/templates/tag.png');
+	color:#000;
+	font-family:准圆;
+	font-size:12px;
+	font-weight:bold;
+}
+.cardTag2{
+	height:15px;
+	width:81px;
+	text-align:center;
+	position:absolute;
+	top:93.7%;
+	left:46.5%;
+	background-image:url('/cards/templates/tag.png');
+	color:#000;
+	font-family:准圆;
+	font-size:12px;
+	font-weight:bold;
+}
+.cardTextArea{
+	position:absolute;
+	bottom:12%;
+	left:5%;
+}
+.cardTextArea > img{
+	display:block;
+}
+.cardDesc{
+	background-image:url('/cards/templates/description.png');
+	background-repeat:repeat-y;
+	font-family:黑体;
+	font-size:15px;
+	color:#000;
+	padding-left:5%;
+	padding-right:5%;
+	text-align:center;
+	margin-bottom:3%;
+}
+.cardText{
+	background-image:url('/cards/templates/text.png');
+	background-repeat:repeat-y;
+	font-family:准圆;
+	font-size:12px;
+	color:#000;
+	padding-left:5%;
+	padding-right:5%;
 }
