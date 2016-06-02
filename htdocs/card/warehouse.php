@@ -14,7 +14,7 @@
 	$result = mysqli_query($conn,$sql);
 	while($row=mysqli_fetch_array($result)){
 		displayCard($row['cardid'],$card);
-		echo "<br/>";
+		echo "　";
 	}
 ?>
 		</div>
