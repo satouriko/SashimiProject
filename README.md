@@ -1,4 +1,4 @@
-﻿# SashimiProject
+# SashimiProject
 
 <h3>计划书／一期</h3>
 <ul>

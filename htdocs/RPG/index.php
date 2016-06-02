@@ -10,7 +10,7 @@
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	<script>
-		document.getElementById("RPG").className='headerActiveA';
+		changeHeaderClass("RPG");
 	</script>
 	</body>
 </html>

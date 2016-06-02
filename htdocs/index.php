@@ -13,7 +13,10 @@
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	<script>
-		document.getElementById("headerLogo").className='headerActiveLogo';
+		$(document).ready(function(){
+			$("#headerLogo").removeClass("headerLogo");
+			$("#headerLogo").addClass("headerActiveLogo");
+		});
 	</script>
 	</body>
 </html>

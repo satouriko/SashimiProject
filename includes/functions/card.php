@@ -1,20 +1,22 @@
-﻿<?php
-	function displayCard($id, $conn){
-		$sql = "select * from cardinfo where (id = '".$id."');";
-		$result = mysqli_query($conn,$sql);
-		$row = mysqli_fetch_array($result);
-		echo $row['cardno']."<br/>";
-		if($row['type']==1) echo "角色<br/>"; else if($row['type']==2) echo "事件<br/>"; else echo "闪耀时刻<br/>";
-		echo $row['title']." ".$row['name']."<br/>";
-		echo $row['level']."/".$row['cost']."<br/>";
-		echo $row['rarity']."<br/>";
-		echo $row['number1']."<br/>";
-		for($i=0;$i<$row['number2'];$i++) echo "※";
+<?php
+	function getCardInfo($configRootDir, &$card){
+		$jsonFile = $configRootDir."includes/cardinfo/cards.json";
+		$jsonString = file_get_contents($jsonFile);
+		$card = json_decode($jsonString);
+	}
+	function displayCard($id, $card){
+		echo $card[$id]->{'cardno'}."<br/>";
+		if($card[$id]->{'type'}==1) echo "角色<br/>"; else if($card[$id]->{'type'}==2) echo "事件<br/>"; else echo "闪耀时刻<br/>";
+		echo $card[$id]->{'title'}." ".$card[$id]->{'name'}."<br/>";
+		echo $card[$id]->{'level'}."/".$card[$id]->{'cost'}."<br/>";
+		echo $card[$id]->{'rarity'}."<br/>";
+		echo $card[$id]->{'number1'}."<br/>";
+		for($i=0;$i<$card[$id]->{'number2'};$i++) echo "※";
 		echo "<br/>";
-		echo $row['illustrator']."<br/>";
-		if($row['tag2']==NULL) echo $row['tag1']."<br/>"; else echo $row['tag1']." ".$row['tag2']."<br/>";
-		echo $row['text']."<br/>";
-		echo $row['source']."<br/>";
+		echo $card[$id]->{'illustrator'}."<br/>";
+		if($card[$id]->{'tag2'}==NULL) echo $card[$id]->{'tag1'}."<br/>"; else echo $card[$id]->{'tag1'}." ".$card[$id]->{'tag2'}."<br/>";
+		echo $card[$id]->{'text'}."<br/>";
+		echo $card[$id]->{'source'}."<br/>";
 		echo "<br/>";
 	}
 	function effect1(){

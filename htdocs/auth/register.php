@@ -19,7 +19,7 @@
 				<input type="submit" name="报道" value="报道">
 			</form>
 			<div id="authErrorInfo"></div>
-			<script>errorReport($_GET['exitcode'])</script>
+			<script>window.setInterval(function(){errorReport($_GET['exitcode']);},100);</script>
 		</div>
 		<?php require_once($configRootDir."includes/views/header.php"); ?>
 	</body>

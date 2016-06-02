@@ -29,7 +29,7 @@
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	<script>
-		document.getElementById("userInfo").className='headerActiveA';
+		changeHeaderClass("userInfo");
 	</script>
 	</body>
 </html>
