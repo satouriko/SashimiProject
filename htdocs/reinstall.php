@@ -1,6 +1,4 @@
 <?php
-system("git pull");
-echo "<br/>";
 unlink("../admin/.initlock");
 echo "Removed file /../admin/.initlock<br/>";
 unlink("../admin/config.php");
