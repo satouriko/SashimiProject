@@ -115,12 +115,8 @@ body{
 .borderText{
 	text-shadow: 0 0 1px #000;
 }
-.cardIndexCard{
-	float:left;
-	height:509px;
-	width:369px;
-}
 .card{
+	float:left;
 	height:489px;
 	width:349px;
 	border-radius:15px;

@@ -13,9 +13,9 @@
 	$sql = "select * from cardpossession where (userid = '".$_SESSION['userid']."');";
 	$result = mysqli_query($conn,$sql);
 	while($row=mysqli_fetch_array($result)){
-		echo "<div class=\"cardIndexCard\"><a href=\"/card/info.php?id=".$row['id']."\">";
+		echo "<a href=\"/card/info.php?id=".$row['id']."\">";
 		displayCard($row,$card);
-		echo "</a></div>";
+		echo "</a>";
 	}
 	echo "　";
 ?>
