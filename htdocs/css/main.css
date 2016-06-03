@@ -26,7 +26,9 @@ body{
 	margin:0;
 }
 .pageBody{
-	margin-bottom:50px;
+	height:100%;
+	overflow:hidden;
+	padding-bottom:50px;
 }
 .headerBar{
 	height:50px;
@@ -113,12 +115,16 @@ body{
 .borderText{
 	text-shadow: 0 0 1px #000;
 }
+.cardIndexCard{
+	float:left;
+	height:509px;
+	width:369px;
+}
 .card{
 	height:489px;
 	width:349px;
 	border-radius:15px;
 	position:relative;
-	float:left;
 	margin:10px;
 }
 .cardTemplate{

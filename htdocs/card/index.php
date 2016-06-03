@@ -13,10 +13,11 @@
 	$sql = "select * from cardpossession where (userid = '".$_SESSION['userid']."');";
 	$result = mysqli_query($conn,$sql);
 	while($row=mysqli_fetch_array($result)){
-		echo "<a href=\"/card/info.php?id=".$row['id']."\">";
-		displayCard($row['cardid'],$card);
-		echo "</a>　";
+		echo "<div class=\"cardIndexCard\"><a href=\"/card/info.php?id=".$row['id']."\">";
+		displayCard($row,$card);
+		echo "</a></div>";
 	}
+	echo "　";
 ?>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
