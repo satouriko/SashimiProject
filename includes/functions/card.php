@@ -37,3 +37,11 @@
 	function effect2(){
 		return;
 	}
+	function get_card($id,$cardid,$userid,$cardlv){
+		$con=mysqli_connect("localhost","yuyang","","sashimi");
+		if (mysqli_connect_errno($con))
+		{echo "Failed to connect to MySQL: " . mysqli_connect_error();}
+		mysqli_select_db($con,"sashimi");
+		$pp="INSERT INTO `cardpossession` (`id`, `cardid`, `userid`, `cardlv`) VALUES ($id, $cardid, $userid, $cardlv);"
+		mysqli_query($con,$pp);
+	}
