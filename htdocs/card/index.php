@@ -14,9 +14,10 @@
 	$result = mysqli_query($conn,$sql);
 	while($row=mysqli_fetch_array($result)){
 		echo "<a href=\"/card/info.php?id=".$row['id']."\">";
-		displayCard($row['cardid'],$card);
-		echo "</a>　";
+		displayCard($row,$card);
+		echo "</a>";
 	}
+	echo "　";
 ?>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>

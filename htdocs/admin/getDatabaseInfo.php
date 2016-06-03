@@ -22,7 +22,7 @@
 		mysqli_query($conn, $sql);
 		mysqli_select_db($conn, $_POST['databaseName']);
 		echo "		开始建立数据表……<br/>\n"; 
-		$sql = "CREATE TABLE user(id int(11) not null primary key auto_increment, username varchar(64) not null, password varchar(64) not null, nickname varchar(256) not null, admin tinyint(1) not null default 0, sashiminum int(11) not null default 14208, diamondnum int(11) not null default 0, cardnum int(11) not null default 0);";
+		$sql = "CREATE TABLE user(id int(11) not null primary key auto_increment, username varchar(64) not null, password varchar(64) not null, nickname varchar(256) not null, admin tinyint(1) not null default 0, sashiminum int(11) not null default 14208, diamondnum int(11) not null default 0, cardnum int(11) not null default 0, lastssmgachatime date not null);";
 		mysqli_query($conn, $sql);
 		echo "		用户表建立完成……<br/>\n";  
 		$sql = "CREATE TABLE cardpossession(id int(11) not null primary key auto_increment, cardid int(11) not null, userid int(11) not null, cardlv int(11) not null);";

@@ -10,6 +10,8 @@
 			<div class="picViewer">
 				公告图片（预留）
 			</div>
+			<div style="text-align:center">@卡牌模板暂时使用Weiβ Schwarz。</div>
+			<div style="text-align:center">@大部分资源来自互联网。</div>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
 	<script>

@@ -13,8 +13,8 @@
 	$sql = "select * from cardpossession where (id = '".$_GET['id']."');";
 	$result = mysqli_query($conn,$sql);
 	$row=mysqli_fetch_array($result);
-	displayCard($row['cardid'],$card);
-	echo "　<br/>卡牌等级:".$row['cardlv'];
+	displayCard($row,$card);
+	displayCardInfo($row,$card);
 ?>
 		</div>
 <?php require_once($configRootDir."includes/views/header.php"); ?>
