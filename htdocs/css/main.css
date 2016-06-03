@@ -184,31 +184,29 @@ body{
 	top:93.5%;
 	left:29%;
 }
-.cardTag1{
+.cardTag{
 	height:15px;
 	width:81px;
-	text-align:center;
 	position:absolute;
 	top:93.7%;
-	left:69%;
 	background-image:url('/cards/templates/tag.png');
 	color:#000;
 	font-family:准圆;
 	font-size:12px;
 	font-weight:bold;
 }
+.cardTag1{
+	left:69%;
+}
 .cardTag2{
-	height:15px;
+	left:46.5%;
+}
+.cardTagText{
 	width:81px;
 	text-align:center;
 	position:absolute;
-	top:93.7%;
-	left:46.5%;
-	background-image:url('/cards/templates/tag.png');
-	color:#000;
-	font-family:准圆;
-	font-size:12px;
-	font-weight:bold;
+	top:7%;
+	transform:scale(0.8);
 }
 .cardTextArea{
 	position:absolute;

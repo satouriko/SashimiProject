@@ -18,8 +18,8 @@
 			echo "<span class=\"cardNumber2\">";
 			for($i=0;$i<$card[$id]->{'number2'};$i++) echo "<img src=\"/cards/templates/number2.png\"/>";
 			echo "</span>";
-			echo "<span class=\"cardTag1\">".$card[$id]->{'tag1'}."</span>";
-			if($card[$id]->{'tag2'}!=NULL) echo "<span class=\"cardTag2\">".$card[$id]->{'tag2'}."</span>";
+			echo "<span class=\"cardTag cardTag1\"><span class=\"cardTagText\">".$card[$id]->{'tag1'}."</span></span>";
+			if($card[$id]->{'tag2'}!=NULL) echo "<span class=\"cardTag cardTag2\"><span class=\"cardTagText\">".$card[$id]->{'tag2'}."</span></span>";
 			echo "<span class=\"cardTextArea\"><div class=\"cardDesc\">".$card[$id]->{'description'}."</div><img src=\"/cards/templates/".$card[$id]->{'color'}."-texttop.png\"/><div class=\"cardText\">".$card[$id]->{'text'}."</div><img src=\"/cards/templates/".$card[$id]->{'color'}."-textbottom.png\"/></span>";
 			echo "</div>";
 		}
