@@ -37,7 +37,7 @@
 	function effect2(){
 		return;
 	}
-	function get_card($cardid,$userid,$cardlv){
-		$pp="INSERT INTO 'cardpossession' ('cardid', 'userid', 'cardlv') VALUES ($cardid, $userid, $cardlv);";
+	function get_card($cardid,$userid,$cardlv,$conn){
+		$pp="INSERT INTO cardpossession (cardid, userid, cardlv) VALUES ($cardid, $userid, $cardlv);";
 		mysqli_query($conn,$pp);
 	}
