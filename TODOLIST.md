@@ -2,7 +2,6 @@
 
 <h3>黑猫</h3>
 <ul>
-	<li>设计基础卡牌</li>
 	<li>越权访问的禁止</li>
 	<li>登录信息写入cookies</li>
 	<li>登录检查的Ajax化</li>

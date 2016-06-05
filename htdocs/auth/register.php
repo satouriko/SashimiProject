@@ -3,6 +3,7 @@
 	<head>
 <?php require_once("../../includes/functions/head.php"); ?>
 <?php if(isset($_SESSION['logined'])) header("Location: /"); ?>
+<?php header("Cache-control: private"); ?>
 		<link rel="stylesheet" type="text/css" href="/css/auth.css" />
 		<script src="/js/auth.js"></script>
 		<title>新生鱼片报道>.<</title>

@@ -4,4 +4,4 @@
 		fwrite($fileConfigPhp, "<?php\n	\$configRootDir = \"".addslashes(substr($_SERVER['DOCUMENT_ROOT'],0,-7))."/\";");
 		fclose($fileConfigPhp);
 	}
-	header("Location: /admin/init.php");
+	header("Location: ".$_SERVER['HTTP_REFERER']);

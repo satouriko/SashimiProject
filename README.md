@@ -1,9 +1,9 @@
-# SashimiProject
+# README - SashimiProject
 
 <h3>计划书／一期</h3>
 <ul>
-	<li>卡牌管理和扭蛋系统</li>
-	<li>游戏Wiki系统</li>
+	<li>卡牌管理</li>
+	<li>扭蛋系统</li>
 </ul>
 
 <h3>一期任务分配</h3>

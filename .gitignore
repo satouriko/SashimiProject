@@ -1,3 +1,4 @@
 /admin/config.php
 /admin/databaseInfo.php
 /admin/.initlock
+/htdocs/admin/pull.php
