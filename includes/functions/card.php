@@ -37,8 +37,7 @@
 	function effect2(){
 		return;
 	}
-	function get_card($id,$cardid,$userid,$cardlv){
-		mysqli_select_db($con,"sashimi");
-		$pp="INSERT INTO `cardpossession` (`id`, `cardid`, `userid`, `cardlv`) VALUES ($id, $cardid, $userid, $cardlv);"
-		mysqli_query($con,$pp);
+	function get_card($cardid,$userid,$cardlv){
+		$pp="INSERT INTO 'cardpossession' ('cardid', 'userid', 'cardlv') VALUES ($cardid, $userid, $cardlv);";
+		mysqli_query($conn,$pp);
 	}
