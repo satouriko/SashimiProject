@@ -11,7 +11,7 @@
         	echo "=";
         	echo $a+$b;
 	}else{
-		$b=mt_rand(0,a);
+		$b=mt_rand(0,$a);
         	echo $a;
 		echo "-";
         	echo $b;
