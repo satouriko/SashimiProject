@@ -24,6 +24,11 @@
 }
 body{
 	margin:0;
+	background-color:#9b785c;
+	background-image:url('/img/background.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-attachment:fixed;
 }
 .pageBody{
 	height:100%;
@@ -113,7 +118,7 @@ body{
 	color:white;
 }
 .borderText{
-	text-shadow: 0 0 1px #000;
+	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
 }
 .card{
 	float:left;
@@ -168,7 +173,7 @@ body{
 	font-size:18px;
 	color:#000;
 }
-.cardNumber1{
+.cardNumber{
 	position:absolute;
 	top:90.5%;
 	left:7.8%;
@@ -178,11 +183,6 @@ body{
 	width:65px;
 	color:#FFF;
 	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
-}
-.cardNumber2{
-	position:absolute;
-	top:93.5%;
-	left:29%;
 }
 .cardTag{
 	height:15px;
